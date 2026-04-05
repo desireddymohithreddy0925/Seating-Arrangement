@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Seating Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🎓 Seating Arrangement Generator</h1>
+
+    <form action="/generate" method="post" class="card">
+
+        <input type="number" name="rows" placeholder="Rows" required>
+        <input type="number" name="cols" placeholder="Columns" required>
+
+        <input type="text" name="participants" placeholder="A,B,C,D">
+        <input type="text" name="conflicts" placeholder="A-B,B-C">
+
+        <button type="submit">Generate Seating</button>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            border: 1px solid black;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Conflict highlight */
+        .conflict {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Seating Arrangement</h2>
+
+<table>
+    <tr th:each="row : ${seats}">
+        <td th:each="cell : ${row}" th:text="${cell}"></td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Generate Again Button -->
+<a href="/">
+    <button>🔄 Generate Again</button>
+</a>
+
+</body>
+</html>
