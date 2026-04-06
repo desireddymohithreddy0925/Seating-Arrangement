@@ -170,7 +170,7 @@ D   B
 
 ## 🙋‍♂️ Author
 
-* Your Name
+* DESIREDDY MOHITH REDDY
 
 ---
 
